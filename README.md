@@ -1,4 +1,4 @@
-# Liquidity Shocks and Free Cash Flow: Evidence from Russian Industries (2011–2024)
+# Liquidity and Free Cash Flow: by Industries
 
 An econometric and deep learning pipeline analysing the impact of liquidity shocks on Free Cash Flow (FCF) across 19 Russian industries using the RFSD (Russian Financial Statements Database) panel dataset.
 
