@@ -346,9 +346,26 @@ Industries where all four point in the same direction are the strongest cases fo
 
 ## Citation
 
+**Dataset:**
+
+- Bondarkov, S., Ledenev, V. and Skougarevskiy, D. (2025). Russian Financial Statements Database. *Scientific Data*, 12(1). https://doi.org/10.1038/s41597-025-05150-1
+  
 If using this pipeline or methodology, please cite the RFSD data source and relevant methodological references:
 
 - Kalman, R.E. (1960). A new approach to linear filtering and prediction problems. *Journal of Basic Engineering*, 82(1), 35–45. — DFM estimation
 - Diebold, F.X. and Mariano, R.S. (1995). Comparing predictive accuracy. *Journal of Business & Economic Statistics*, 13(3), 253–263. — DM test
 - Oreshkin, B.N. et al. (2020). N-BEATS: Neural basis expansion analysis for interpretable time series forecasting. *ICLR 2020*. — N-BEATS architecture
 - Taylor, S.J. and Letham, B. (2018). Forecasting at scale. *The American Statistician*, 72(1), 37–45. — Prophet
+
+**BibTeX:**
+```bibtex
+@article{bondarkov2025rfsd,
+  title={{R}ussian {F}inancial {S}tatements {D}atabase},
+  author={Bondarkov, Sergey and Ledenev, Victor and Skougarevskiy, Dmitriy},
+  journal={Scientific Data},
+  doi={10.1038/s41597-025-05150-1},
+  year={2025},
+  volume="12",
+  issue="1"
+}
+```
