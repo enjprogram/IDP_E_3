@@ -1,0 +1,136 @@
+{
+  "seasonal_decomp": "results/diagnostics/E/seasonal_decomposition.png",
+  "acf_pacf_fcf": "results/diagnostics/E/acf_pacf_free_cash_flow.png",
+  "acf_pacf_fcf_csv": "results/diagnostics/E/acf_pacf_free_cash_flow.csv",
+  "covariance": {
+    "covariance_csv": "results/diagnostics/E/covariance_liquidity.csv",
+    "correlation_csv": "results/diagnostics/E/correlation_liquidity.csv",
+    "heatmap_png": "results/diagnostics/E/correlation_heatmap_liquidity.png"
+  },
+  "arima": {
+    "summary": {
+      "summary_txt": "results/diagnostics/E/arima/summary.txt",
+      "info_json": "results/diagnostics/E/arima/info.json"
+    },
+    "residual_plot": "results/diagnostics/E/arima/residual_diagnostics.png",
+    "heteroskedasticity": [
+      {
+        "breusch_pagan": {
+          "lm_stat": 1.135645636662959,
+          "p_value": 0.566758031620225,
+          "f_stat": 0.43321253755702194,
+          "f_p_value": 0.6672086908728835,
+          "heteroskedastic": false
+        },
+        "white": {
+          "lm_stat": 2.1734401511324157,
+          "p_value": 0.703894646324104,
+          "f_stat": 0.31838000387456555,
+          "f_p_value": 0.8532102053353492,
+          "heteroskedastic": false
+        },
+        "ljung_box_squared": {
+          "lb_stat": 2.6824914377249476,
+          "p_value": 0.4432108958077442,
+          "lags": 3,
+          "arch_effects": false
+        },
+        "durbin_watson": {
+          "statistic": 1.473159629571496,
+          "interpretation": "positive autocorrelation"
+        },
+        "jarque_bera": {
+          "statistic": 1.802912786176524,
+          "p_value": 0.40597796547256315,
+          "normal": true
+        }
+      },
+      "results/diagnostics/E/arima/heteroskedasticity.json"
+    ],
+    "acf_pacf_resid": "results/diagnostics/E/acf_pacf_arima_residuals.png"
+  },
+  "sarima": {
+    "summary": {
+      "summary_txt": "results/diagnostics/E/sarima/summary.txt",
+      "info_json": "results/diagnostics/E/sarima/info.json"
+    },
+    "residual_plot": "results/diagnostics/E/sarima/residual_diagnostics.png",
+    "heteroskedasticity": [
+      {
+        "breusch_pagan": {
+          "lm_stat": 1.135645636662959,
+          "p_value": 0.566758031620225,
+          "f_stat": 0.43321253755702194,
+          "f_p_value": 0.6672086908728835,
+          "heteroskedastic": false
+        },
+        "white": {
+          "lm_stat": 2.1734401511324157,
+          "p_value": 0.703894646324104,
+          "f_stat": 0.31838000387456555,
+          "f_p_value": 0.8532102053353492,
+          "heteroskedastic": false
+        },
+        "ljung_box_squared": {
+          "lb_stat": 2.6824914377249476,
+          "p_value": 0.4432108958077442,
+          "lags": 3,
+          "arch_effects": false
+        },
+        "durbin_watson": {
+          "statistic": 1.473159629571496,
+          "interpretation": "positive autocorrelation"
+        },
+        "jarque_bera": {
+          "statistic": 1.802912786176524,
+          "p_value": 0.40597796547256315,
+          "normal": true
+        }
+      },
+      "results/diagnostics/E/sarima/heteroskedasticity.json"
+    ],
+    "acf_pacf_resid": "results/diagnostics/E/acf_pacf_sarima_residuals.png"
+  },
+  "sarimax": {
+    "summary": {
+      "summary_txt": "results/diagnostics/E/sarimax/summary.txt",
+      "info_json": "results/diagnostics/E/sarimax/info.json"
+    },
+    "residual_plot": "results/diagnostics/E/sarimax/residual_diagnostics.png",
+    "heteroskedasticity": [
+      {
+        "breusch_pagan": {
+          "lm_stat": 1.135645636662959,
+          "p_value": 0.566758031620225,
+          "f_stat": 0.43321253755702194,
+          "f_p_value": 0.6672086908728835,
+          "heteroskedastic": false
+        },
+        "white": {
+          "lm_stat": 2.1734401511324157,
+          "p_value": 0.703894646324104,
+          "f_stat": 0.31838000387456555,
+          "f_p_value": 0.8532102053353492,
+          "heteroskedastic": false
+        },
+        "ljung_box_squared": {
+          "lb_stat": 2.6824914377249476,
+          "p_value": 0.4432108958077442,
+          "lags": 3,
+          "arch_effects": false
+        },
+        "durbin_watson": {
+          "statistic": 1.473159629571496,
+          "interpretation": "positive autocorrelation"
+        },
+        "jarque_bera": {
+          "statistic": 1.802912786176524,
+          "p_value": 0.40597796547256315,
+          "normal": true
+        }
+      },
+      "results/diagnostics/E/sarimax/heteroskedasticity.json"
+    ],
+    "acf_pacf_resid": "results/diagnostics/E/acf_pacf_sarimax_residuals.png"
+  }
+}

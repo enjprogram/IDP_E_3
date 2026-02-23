@@ -1,0 +1,31 @@
+{
+  "breusch_pagan": {
+    "lm_stat": 0.2328188282610626,
+    "p_value": 0.8901107247786801,
+    "f_stat": 0.0796671668009631,
+    "f_p_value": 0.924383990758476,
+    "heteroskedastic": false
+  },
+  "white": {
+    "lm_stat": 6.159274311182388,
+    "p_value": 0.18756513568401162,
+    "f_stat": 2.1682045314787324,
+    "f_p_value": 0.23598733907697972,
+    "heteroskedastic": false
+  },
+  "ljung_box_squared": {
+    "lb_stat": 2.5590894661272183,
+    "p_value": 0.4647068722727983,
+    "lags": 3,
+    "arch_effects": false
+  },
+  "durbin_watson": {
+    "statistic": 2.441307874409173,
+    "interpretation": "no autocorrelation"
+  },
+  "jarque_bera": {
+    "statistic": 0.7575912633076852,
+    "p_value": 0.684685526417492,
+    "normal": true
+  }
+}
