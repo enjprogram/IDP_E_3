@@ -165,14 +165,17 @@ The threshold is relative to each industry's own shock distribution — capturin
 # Clone / navigate to project
 cd Project
 
+uv venv
+uv sync
+
 # Install classical pipeline dependencies
-pip install polars pandas numpy statsmodels pmdarima scipy matplotlib
+uv add polars pandas numpy statsmodels pmdarima scipy matplotlib
 
 # Install deep learning dependencies
-pip install prophet tensorflow scikit-learn tensorboard
+uv add prophet tensorflow scikit-learn tensorboard
 
 # Install dashboard dependencies
-pip install streamlit plotly
+uv add streamlit plotly
 ```
 
 ---
@@ -182,7 +185,7 @@ pip install streamlit plotly
 ### Step 1 — Run the classical econometric pipeline
 
 ```bash
-python main.py
+uv run python main.py
 ```
 
 Results are cached in `results/` — subsequent runs load from cache. To rerun from scratch:
@@ -191,14 +194,14 @@ Results are cached in `results/` — subsequent runs load from cache. To rerun f
 rm results/lagged_df.pkl results/performance_all.pkl \
    results/forecasts_all.pkl results/models_all.pkl \
    results/irf_all.pkl results/adf_results.pkl
-python main.py
+uv run python main.py
 ```
 
 ### Step 2 — Run the deep learning pipeline
 
 ```bash
 # All industries, all models
-python run_dl.py
+uv run python run_dl.py
 
 # Specific industries or models
 python run_dl.py --industries C G K
@@ -210,7 +213,7 @@ To retrain from scratch:
 
 ```bash
 rm -rf results/dl/
-python run_dl.py
+uv run python run_dl.py
 ```
 
 ### Step 3 — Launch the interactive dashboard
@@ -232,7 +235,7 @@ Opens at `http://localhost:6006`
 ### Step 5 — Export publication-ready figures
 
 ```bash
-python export_figures.py
+uv run python export_figures.py
 ```
 
 Figures saved to `results/figures/` at 300 DPI.
