@@ -346,7 +346,7 @@ Industries where all four point in the same direction are the strongest cases fo
 
 ## Citation
 
-**Dataset:**
+**Database:**
 
 - Bondarkov, S., Ledenev, V. and Skougarevskiy, D. (2025). Russian Financial Statements Database. *Scientific Data*, 12(1). https://doi.org/10.1038/s41597-025-05150-1
   
